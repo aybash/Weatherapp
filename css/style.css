@@ -1,0 +1,264 @@
+* {margin:0;
+    padding:0;
+    box-sizing: border-box;}
+
+body{
+font-family: 'Times New Roman', Times, serif;
+line-height: 1.5;
+background-color: #4a4ae7;
+
+}
+canvas{display: inline-block;
+        
+        }
+a {text-decoration:none;}
+
+/*Navigation bar*/
+
+nav{
+    background:#222;
+    padding:0 15px;
+}
+
+a{color:#fff;
+    text-decoration:none;}
+
+
+.menu,li {list-style-type:none;}
+
+.item{padding:10px;}
+
+.item a:hover,.item a:hover::after{color:#ccc;}
+
+
+/*Mobile menu*/
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem ;
+}
+
+.hamburger{display:none;
+}
+
+.bar{display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background-color:#101010;}
+
+.menu{display:flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.item{margin-left:2rem;}
+
+.nav-link{font-size: 1rem;
+    font-weight: 400;
+    color:#fff;}
+
+
+
+@media only screen and (max-width:768px){
+    .menu{
+        position:fixed;
+        left:100%;
+        top:5rem;
+        flex-direction: column;
+        width:-100%;
+        border-radius:10px;
+        text-align:center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 5);
+    }
+
+    .menu.active{left:0;}
+
+    .item{margin:2.5rem 0;
+    }
+    .hamburger{
+        display:block;
+        cursor:pointer;
+        background-color: #fff;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+
+    }
+
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+
+.nav-bar label{cursor:pointer;}
+
+
+.nav-bar-2{display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.nav-bar-2 button{width:100px;
+align-items: center;
+background-color: #4a4ae7;
+border:none;
+color:#fff;
+
+}
+
+.nav-bar-2 button:hover{
+background-color: rgba(0,0,0,0.3);}
+
+/*Details on weather forecast*/
+.weather-report {display: flex;
+justify-content: center;
+margin-top:30px;}
+
+.temperature{font-size:40px;
+font-weight: bold;}
+
+.weather-text{font-weight:bold;}
+
+.Details-info{margin-top:100px;}
+
+.detail-title{font-weight:bold;
+margin-left:30px;
+color:#fff}
+
+.details-container{
+max-width:1300px;
+display:flex;
+
+justify-content: space-between;
+padding:30px;
+margin:auto;
+}
+
+
+.weather-info{width:45%;
+
+    text-align:center;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.3)
+    
+}
+
+
+.weather-info-text{font-size:18px;
+}
+
+
+
+.fa-wind{color:#fff;}
+
+.fa-water{color:#fff;}
+.fa-sun{color:#ffa500;}
+.fa-thermometer-half{color:#ff0000;}
+
+.details{display: flex;
+justify-content: center;}
+
+.details-button {text-align:center;
+width:100px;
+background-color:#c27e00;
+display:block;
+padding:0 14px 0 14px;
+color:#fff;
+border:2px solid ;
+}
+
+
+
+.toggle{display:none;
+    }
+
+.details-container{
+    max-width:960px;
+    display:flex;
+    
+    justify-content: space-between;
+    padding:30px;
+    margin:auto;
+    }
+    .detail-title{font-weight:bold;
+        margin-left:280px;
+        color:#fff}
+
+
+.fa-map-marked-alt{color:#ffffff;}
+
+#footer{display:flex;
+        flex-direction: column;
+        margin-left:20px;
+    margin-right:20px;}
+
+.footer-info{display:flex;
+            flex-direction: column;}
+
+.footer-info a:hover{color:grey;
+                    text-decoration: underline;
+                    }
+
+#About-us  {color:#ffffff;}
+
+
+#footer-container{background: #000000;}
+
+.footer-title{color:rgb(255, 187, 0);}
+
+.copyright{text-align: center;}
+
+
+/*Desktop menu*/
+@media all and (min-width:960px){
+    .menu{align-items:flex-start;
+        flex-wrap: nowrap;
+    background: none;}
+
+    .logo{order:0;}
+
+    .item{order:1;
+    position:relative;
+display:block;
+width:auto;
+    }
+
+
+    #footer{display:flex;
+        flex-direction: row;
+        margin-left:20px;
+    margin-right:20px;
+    }
+
+.footer-info{display:flex;
+            flex-direction: column;
+            margin:50px;}
+
+.footer-info a:hover{color:grey;
+                    text-decoration: underline;
+                    }
+
+#About-us  {color:#ffffff;}
+
+
+#footer-container{background: #000000;}
+
+.footer-title{color:rgb(255, 187, 0);}
+
+
+}
+
+.copyright{text-align: center;
+         background: #000000;}
