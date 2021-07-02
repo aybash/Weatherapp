@@ -90,7 +90,7 @@ const KELVIN = 273;
 const key = "4f352d962bfb50b1dd3da0ed0f2e8dbc";
 
 function getWeather(latitude,longitude){
-   let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+   let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
 fetch(api) 
     .then(function(response){
